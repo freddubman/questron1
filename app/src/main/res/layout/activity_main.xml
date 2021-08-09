@@ -50,7 +50,7 @@
         android:id="@+id/Résultat"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:text="@string/r_sultat"
+        android:text="@string/resultat"
         android:textAlignment="center"
         android:textColor="#FF9800" />
 

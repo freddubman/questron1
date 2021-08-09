@@ -19,11 +19,11 @@ class MainActivity2 : AppCompatActivity() {
         val Reponse8 = findViewById<Button>(R.id.RéponseH)
         var Resultat2 = findViewById<TextView>(R.id.Résultat2)
         val relance =  Intent(this,MainActivity::class.java)
+        val builder = AlertDialog.Builder(this)
+            builder.setMessage("Souhaitez-vous jouer de nouveau ?")
 
         Reponse5.setOnClickListener{
-            val builder = AlertDialog.Builder(this)
             builder.setTitle("Bonne réponse")
-            builder.setMessage("Souhaitez-vous jouer de nouveau")
             builder.setPositiveButton("Oui") { dialog, which ->
                 Reponse5.text = "Nouvelle partie"
                 startActivity(relance)
@@ -36,9 +36,7 @@ class MainActivity2 : AppCompatActivity() {
 
 
         Reponse6.setOnClickListener{
-            val builder = AlertDialog.Builder(this)
             builder.setTitle("Mauvaise réponse")
-            builder.setMessage("Souhaitez-vous jouer de nouveau")
             builder.setPositiveButton("Oui") { dialog, which ->
                 Reponse5.text = "Nouvelle partie"
                 startActivity(relance)
@@ -50,9 +48,7 @@ class MainActivity2 : AppCompatActivity() {
         }
 
         Reponse7.setOnClickListener{
-            val builder = AlertDialog.Builder(this)
             builder.setTitle("Mauvaise réponse")
-            builder.setMessage("Souhaitez-vous jouer de nouveau")
             builder.setPositiveButton("Oui") { dialog, which ->
                 Reponse5.text = "Nouvelle partie"
                 startActivity(relance)
@@ -64,9 +60,7 @@ class MainActivity2 : AppCompatActivity() {
         }
 
         Reponse8.setOnClickListener{
-            val builder = AlertDialog.Builder(this)
             builder.setTitle("Mauvaise réponse")
-            builder.setMessage("Souhaitez-vous jouer de nouveau")
             builder.setPositiveButton("Oui") { dialog, which ->
                 Reponse5.text = "Nouvelle partie"
                 startActivity(relance)
@@ -77,45 +71,7 @@ class MainActivity2 : AppCompatActivity() {
             builder.show()
         }
 
-
-        /* Creation de l'alerte
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Mon popup")
-        builder.setMessage("Bienvenue sur ma première application")
-        builder.setPositiveButton("Valider") { dialog, which ->
-            tvMessage.text = "Popup validé"
-        }
-        builder.setNegativeButton("Refusé") { dialog, which ->
-            tvMessage.text = "Popup refusé"
-        }
-        //builder.show()
-
-        // Creation du Toast (petit message)
-        Toast.makeText(this,
-            "Pu de batterie", Toast.LENGTH_SHORT).show()*/
-
-        val compteurreponses = findViewById<TextView>(R.id.compteur)
-        var compteur = 2
-        //btIncrement.setOnClickListener{
-        //compteur += 1
-        compteurreponses.text = compteur.toString()
-
-       /* var compteur = 0
-        fun onCreate(savedInstanceState: Bundle?) {
-            setContentView(R.layout.activity_main)
-            compteurreponses.setOnClickListener{
-                compteur += 1
-                compteurreponses.text = "compteur"
-            }
-        }
-        fun onSaveInstanceState(outState: Bundle) {
-            outState.putInt("compteur", compteur)
-        }
-
-        fun onRestoreInstanceState(savedInstanceState: Bundle) {
-            compteur = savedInstanceState.getInt("compteur")
-        }*/
-        }
     }
+}
 
 
