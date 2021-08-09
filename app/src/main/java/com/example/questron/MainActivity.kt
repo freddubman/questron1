@@ -26,43 +26,20 @@ class MainActivity : AppCompatActivity() {
             }
         Reponse2.setOnClickListener{
             Toast.makeText(this,
-                "Faux", Toast.LENGTH_SHORT).show()
+                "Mauvaise Réponse", Toast.LENGTH_SHORT).show()
             startActivity(masecondequestion)
             }
         Reponse3.setOnClickListener{
             Toast.makeText(this,
-                "Faux", Toast.LENGTH_SHORT).show()
+                "Mauvaise Réponse", Toast.LENGTH_SHORT).show()
             startActivity(masecondequestion)
         }
         Reponse4.setOnClickListener{
             Toast.makeText(this,
-                "Faux", Toast.LENGTH_SHORT).show()
+                "Mauvaise Réponse", Toast.LENGTH_SHORT).show()
             startActivity(masecondequestion)
             }
-
-
-        val compteurreponses = findViewById<TextView>(R.id.compteur)
-        var compteur = 1
-        //btIncrement.setOnClickListener{
-            //compteur += 1
-        compteurreponses.text = compteur.toString()
-
-        /*var compteur = 0
-        fun Resultat(savedInstanceState: Bundle?) {
-            setContentView(R.layout.activity_main)
-            compteurreponses.setOnClickListener{
-                compteur += 1
-                compteurreponses.text = "compteur"
-            }
         }
-        fun onSaveInstanceState(outState: Bundle) {
-            outState.putInt("compteur", compteur)
-        }
-
-        fun onRestoreInstanceState(savedInstanceState: Bundle) {
-            compteur = savedInstanceState.getInt("compteur")
-        }*/
-    }
     }
 
 
