@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0A0A"
+    android:divider="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/questionB"
+        android:layout_width="361dp"
+        android:layout_height="233dp"
+        android:text="@string/question1"
+        android:textColor="#FFEB3B"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/RéponseA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_ponse1" />
+
+    <Button
+        android:id="@+id/RéponseB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_ponse2" />
+
+    <Button
+        android:id="@+id/RéponseC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_ponse3" />
+
+    <Button
+        android:id="@+id/RéponseD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_ponse4" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="33dp" />
+
+    <TextView
+        android:id="@+id/Résultat"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/r_sultat"
+        android:textAlignment="center"
+        android:textColor="#FF9800" />
+
+    <TextView
+        android:id="@+id/compteur"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:text="@string/textview"
+        android:textColor="#E91E63" />
+
+</LinearLayout>

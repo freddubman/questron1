@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Questron</string>
+    <string name="question1">QuestionA</string>
+    <string name="r_ponse1">Réponse1</string>
+    <string name="r_ponse2">Réponse2</string>
+    <string name="r_ponse3">Réponse3</string>
+    <string name="r_ponse4">Réponse4</string>
+    <string name="resultat">Résultat</string>
+    <string name="compteur">compteurreponses</string>
+
+    <string name="question2">QuestionB</string>
+    <string name="r_ponse5">Réponse5</string>
+    <string name="r_ponse6">Réponse6</string>
+    <string name="r_ponse7">Réponse7</string>
+    <string name="r_ponse8">Réponse8</string>
+    <string name="textview">TextView</string>
+    <string name="r_sultat">Résultat</string>
+
+</resources>
