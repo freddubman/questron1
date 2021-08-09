@@ -46,7 +46,23 @@ class MainActivity : AppCompatActivity() {
         //btIncrement.setOnClickListener{
             //compteur += 1
         compteurreponses.text = compteur.toString()
+
+        /*var compteur = 0
+        fun Resultat(savedInstanceState: Bundle?) {
+            setContentView(R.layout.activity_main)
+            compteurreponses.setOnClickListener{
+                compteur += 1
+                compteurreponses.text = "compteur"
+            }
         }
+        fun onSaveInstanceState(outState: Bundle) {
+            outState.putInt("compteur", compteur)
+        }
+
+        fun onRestoreInstanceState(savedInstanceState: Bundle) {
+            compteur = savedInstanceState.getInt("compteur")
+        }*/
+    }
     }
 
 
